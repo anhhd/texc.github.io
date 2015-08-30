@@ -14,6 +14,10 @@ body {
     color: #777;
 }
 
+.text-white {
+    color: white;
+}
+
 .text-primary {
     color: #{{ site.color.primary }};
 }
@@ -120,14 +124,14 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: #{{ site.color.primary }};
+    border-color:  #efa708;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #{{ site.color.primary }};
+    background-color:  #efa708;
 }
 
 .btn-xl:hover,
@@ -176,7 +180,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: Montserrat, serif;
     color: #{{ site.color.primary }};
 }
 
@@ -222,13 +226,13 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #{{ site.color.primary }};
+    background-color: #efa708;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #{{ site.color.secondary }};
+    background-color: #f1b020;
 }
 
 @media(min-width:768px) {
@@ -356,6 +360,11 @@ section h3.section-subheading {
     margin: 0 0 15px;
 }
 
+#portfolio .portfolio-item img {
+    width: 100%;
+    max-width: none;
+}
+
 #portfolio .portfolio-item .portfolio-link {
     display: block;
     position: relative;
@@ -402,7 +411,7 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-caption {
     margin: 0 auto;
     padding: 25px;
-    max-width: 400px;
+    width:100%;
     text-align: center;
     background-color: #fff;
 }
@@ -410,13 +419,13 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
     text-transform: none;
+    padding: 1em 0 1.5em;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
-    font-style: italic;
 }
 
 #portfolio * {
@@ -426,6 +435,15 @@ section h3.section-subheading {
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
+    }
+    #portfolio .portfolio-item img {
+        width: 100%;
+        max-width: 100%;
+    }
+    #portfolio .portfolio-item .portfolio-caption {
+        margin: 0;
+        width: 100%;
+        max-width:none;
     }
 }
 
