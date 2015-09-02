@@ -4,9 +4,8 @@ subtitle: Excavators ranging from 5 to 30 tonnes, with additional tilting hitch,
 layout: default
 modal-id: 4
 date: 2014-07-17
-img: escape.png
 thumbnail: machinery-thumbnail.JPG
-alt: image-alt
+alt: Machinery
 project-date: April 2014
 client: Start Bootstrap
 category: Web Development

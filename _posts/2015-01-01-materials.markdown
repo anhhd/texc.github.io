@@ -4,9 +4,8 @@ subtitle: Our licensed mechanics and fuel & service trucks keeps all our gear ma
 layout: default
 modal-id: 1
 date: 2014-07-16
-img: machinery.png
 thumbnail: self-serviced-thumbnail.JPG
-alt: image-alt
+alt: Self Service
 project-date: April 2014
 client: Start Bootstrap
 category: Web Development

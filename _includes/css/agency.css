@@ -868,6 +868,11 @@ ul.social-buttons li a:active {
     background: #{{ site.color.primary }};
 }
 
+img {
+    max-width:100%;
+    width: auto;
+}
+
 img::selection {
     background: 0 0;
 }
