@@ -1,3 +1,8 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+@import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+
 /*!
  * Bootswatch v3.2.0
  * Homepage: http://bootswatch.com
@@ -10,15 +15,23 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #333;
+}
+
+body {
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
 }
 
 .text-muted {
@@ -878,6 +891,11 @@ ul.social-buttons li a:active {
 ::selection {
     text-shadow: none;
     background: #fed136;
+}
+
+img {
+    max-width:100%;
+    width: auto;
 }
 
 img::selection {
